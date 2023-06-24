@@ -1,0 +1,87 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# task manager
+ctrl + shift + Escape
+    xfce4-taskmanager
+
+# launcher
+super + space
+    rofi -show drun
+
+super + r
+    rofi -show run
+
+super + Escape
+    berryc window_hide
+
+#super + l
+#    slock
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# volume control
+XF86AudioLowerVolume
+        pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioRaiseVolume
+        $HOME/bin/volumeup.sh
+
+XF86AudioMute
+        pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+#
+# berry hotkeys
+#
+
+super + Right
+	berryc snap_right
+
+super + Left
+	berryc snap_left
+
+super + Down
+	berryc window_hide
+
+super + Up
+	berryc window_monocle
+
+super + l
+     slock
+
+super + {1-9}
+    berryc switch_workspace {0-9}
+
+super + shift + {1-9}
+    berryc send_to_workspace {0-9}q
+
+super + m
+    berryc window_monocle
+
+super + f
+    berryc fullscreen
+
+super + n
+    berryc toggle_decorations
+
+super + Tab
+    berryc cycle_focus
+#    rofi -show windowcd -hover-select -me-select-entry '' -me-accept-entry MousePrimary -window-format \{t\}
+#     rofi -kb-cancel "Alt+Escape,Escape" -kb-accept-entry '!Alt-Tab,!Alt+Down,!Alt+Up,Return,!Alt+Alt_L' -kb-row-down 'Alt+Tab,Alt+Down,Down' -kb-row-up 'Alt+Up,Up' -show window -selected-row 1 -window-format \{t\}
+
+
+super + q
+    berryc window_close
+
+super + c
+    berryc window_center
+
+~button1
+    berryc pointer_focus
