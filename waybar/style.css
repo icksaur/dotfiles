@@ -5,33 +5,14 @@
 }
 
 window#waybar {
-    background-color: rgb(22, 27, 37);
-    /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
-    color: #ffffff;
+    background-color: #181818;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 8px;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
 }
 
 button {
@@ -48,19 +29,21 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#workspaces {
+  padding: 0 10 0 10;
+}
+
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
     color: #ffffff;
+    padding: 4 6 0 6;
 }
 
 #workspaces button.active {
-    padding: 0 5px;
     background-color: #B3BE5A;
     color: #000000;
 }
 
-#workspaces button:hover {
+#workspaces button.hover {
     background-color: #B3BE5A;
     color: #000000;
 }
@@ -80,7 +63,6 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -100,9 +82,21 @@ button:hover {
     color: #ffffff;
 }
 
+#custom-heartsclock,
 #window,
-#workspaces {
-    margin: 0 4px;
+#clock {
+  color: #ffffff;
+  padding: 6 6 0 6;
+  background-color: #181818;
+}
+
+#custom-heartsclock {
+  margin: 0 8 0 0;
+  padding: 6 0 0 6;
+}
+
+#tray {
+  background-color: #181818;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -114,12 +108,6 @@ button:hover {
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
-
-/*
-#clock {
-    background-color: #64727D;
-}
-*/
 
 #battery {
     background-color: #ffffff;
@@ -288,5 +276,5 @@ label:focus {
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }

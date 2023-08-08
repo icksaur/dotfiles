@@ -17,12 +17,12 @@ super + space
 super + r
     rofi -show run
 
-super + Escape
-    berryc window_hide
+# lock screen
 
-#super + l
-#    slock
+super + l
+     slock
 
+    
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -53,9 +53,6 @@ super + Down
 super + Up
 	berryc window_monocle
 
-super + l
-     slock
-
 super + {1-9}
     berryc switch_workspace {0-9}
 
@@ -73,9 +70,6 @@ super + n
 
 super + Tab
     berryc cycle_focus
-#    rofi -show windowcd -hover-select -me-select-entry '' -me-accept-entry MousePrimary -window-format \{t\}
-#     rofi -kb-cancel "Alt+Escape,Escape" -kb-accept-entry '!Alt-Tab,!Alt+Down,!Alt+Up,Return,!Alt+Alt_L' -kb-row-down 'Alt+Tab,Alt+Down,Down' -kb-row-up 'Alt+Up,Up' -show window -selected-row 1 -window-format \{t\}
-
 
 super + q
     berryc window_close
@@ -83,5 +77,5 @@ super + q
 super + c
     berryc window_center
 
-~button1
-    berryc pointer_focus
+super + Escape
+    berryc window_hide
