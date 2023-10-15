@@ -8,7 +8,7 @@ window#waybar {
     background-color: #181818;
     transition-property: background-color;
     transition-duration: .5s;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 window#waybar.hidden {
