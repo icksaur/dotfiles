@@ -8,4 +8,6 @@ ln -sf ~/dotfiles/waybar/config ~/.config/waybar/config
 ln -sf ~/dotfiles/waybar/heartsclock-css.sh ~/.config/waybar/heartsclock-css.sh
 ln -sf ~/dotfiles/waybar/style.css ~/.config/waybar/style.css
 ln -sf ~/dotfiles/tofi/config ~/.config/tofi/config
+ln -sf ~/dotfiles/kitty ~/.config/kitty
+ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 
