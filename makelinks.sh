@@ -10,4 +10,6 @@ ln -sf ~/dotfiles/waybar/style.css ~/.config/waybar/style.css
 ln -sf ~/dotfiles/tofi/config ~/.config/tofi/config
 ln -sf ~/dotfiles/kitty ~/.config/kitty
 ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
-
+ln -sf ~/dotfiles/berry ~/.config/berry
+ln -sf ~/dotfiles/rofi ~/.config/rofi
+ln -sf ~/dotfiles/tint2 ~/.config/tint2

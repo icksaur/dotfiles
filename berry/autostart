@@ -2,32 +2,27 @@
 
 export TERMINAL="kitty"
 
-feh --bg-fill ~/Sync/custom/moss.jpeg
+feh --bg-fill ~/Sync/custom/leaves.jpeg
+
+# Easily find hotkey scripts
+set PATH="$XDG_CONFIG_HOME/.berry:$PATH"
 
 # Set decoration geometry
-berryc border_width        0
-berryc inner_border_width  0
-berryc title_height        28
-berryc draw_text           true
-berryc top_gap             36
+berry b_width 0
+berry i_width 0
+berry t_height 18
+berry bottom_height 8
 
 # Set decoration colors
-berryc focus_color         b3be5a
-berryc unfocus_color       604040
-berryc inner_focus_color   b3be5a
-berryc inner_unfocus_color 604040
-berryc text_focus_color    000000
-berryc text_unfocus_color  dddddd
+berry bf_color b6b80b
+berry bu_color 604040
+berry if_color b6b80b
+berry iu_color 604040
 
-# Other options
-berryc smart_place "true"
-berryc draw_text   "true"
-berryc edge_lock   "false"
-berryc set_font    "System-12"
-
-sxhkd -c ~/.config/berry/sxhkdrc &
 fcitx5 -d
-#picom &
+volctl &
+picom &
 tint2 &
 dunst &
-volctl &
+discord &
+steam & # seems to crash tint2 :(
