@@ -15,9 +15,4 @@ imap jj <Esc>
 highlight ModeMsg ctermbg=red
 map <TAB> :bn<ENTER>
 
-call plug#begin('~/.vim/plugged')
-" Plugin declarations go here
-Plug 'alaviss/nim.nvim'
-call plug#end()
-
 filetype plugin indent on
