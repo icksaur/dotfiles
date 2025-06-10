@@ -1,1 +1,0 @@
-sx openbox-session
